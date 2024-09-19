@@ -1,0 +1,493 @@
+body{
+    background-color: #F1F8E9;
+}
+
+
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red);
+
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 15px;
+    animation: ouranime 20s infinite; 
+    z-index: -1;
+}
+
+
+
+
+@keyframes ouranime {
+    0% {
+       background-image: url('freshness-green-leaves-ripe-grapes-nature-organic-gourmet-refreshment-generated-by-artificial-intelligence.jpg');
+       background-repeat: no-repeat;
+       background-size: 100% 600px;
+     
+    }
+    25% {
+        background-image: url('green-field.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 600px;
+    }
+    50% {
+        background-image: url('sprouts.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 600px;
+    }
+    70% {
+        background-image: url('properties.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 600px;
+        
+    }
+    100% {
+        background-image: url('freshness-green-leaves-ripe-grapes-nature-organic-gourmet-refreshment-generated-by-artificial-intelligence.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 600px;
+    }
+}
+
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:  black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+   
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }
+  footer {
+    background-color: #333; 
+    color:  #F8F8F8 ;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color:#F8F8F8;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    position: relative;
+    top:60px;
+    left: 90px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #F8F8F8;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #F8F8F8;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #F8F8F8;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.text-on-video {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+   
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom:300px;
+    left: 300px;
+    animation: text-color 30s infinite;
+    
+}
+
+@keyframes text-color {
+    0% {
+        color: #fff;   
+    }
+   
+    25% {
+        color: #FFEB00;   
+    }
+    
+    50% {
+        color: #fff;
+    }
+   
+    75% {
+        color: #F5F7F8;   
+    }
+    100% {
+        color: #fff;  
+    }
+}
+
+.text-on-video h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 30px;
+}
+.text-on-video p {
+    font-size: 24px;
+    margin: 20px 0;
+    margin-top: 30px;
+}
+.text-on-video .cta {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+   
+    position: relative;
+    top: 30px;
+}
+.services {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+   
+  justify-content: center;
+    width:90% ;
+    
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    height: 170px;
+    list-style-type: none;
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+}
+.service-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.service-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.service-item a {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+.service-item img{
+    width:30px;
+    height: 30px;
+    
+}
+details p{
+    display: block;
+    width: 350px;
+    
+    text-align: justify;
+    font-size: 18px;
+   
+    z-index: 20;
+    position: absolute;
+    padding: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 210px;
+    background-color: #e0f7fa; 
+            color: #004d40; 
+            padding: 10px;
+            border: 1px solid #004d40; 
+            border-radius: 5px; 
+}
+mark {
+    background-color: lightblue; 
+    color: black; 
+}
+.total-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+
+.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 35px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+    
+   
+    
+   
+}

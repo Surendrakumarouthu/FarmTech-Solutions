@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+
+    <title>FarmTech Solutions-About Us</title>
+    <style>
+body{
+            background-color: #F1F8E9;
+
+        }
+       
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:    black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+.third li{
+    
+    box-sizing: border-box;
+    
+  
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 35px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+    
+   
+    
+   
+}
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    position: relative;
+    top:60px;
+    left: 90px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+
+.client-section {
+            margin: 20px;
+            text-align: center;
+        }
+        .client-section h2 {
+            font-size: 28px;
+            color: #1b5e20; 
+            margin-bottom: 10px;
+        }
+        .client-section p {
+            font-size: 16px;
+            color: #5d4037; 
+            margin-bottom: 30px;
+        }
+        .bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.name h1 {
+    
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+        .client {
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            width: 30%;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffffff; 
+            
+        }
+
+        .client img {
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            border: 4px solid #a1887f; 
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .client h4 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #4e342e;
+        }
+        .client p {
+            font-size: 14px;
+            color: #6d4c41; 
+        }
+        
+        .client-section div {
+            margin-top: 30px;
+        }
+        .client-section div p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #795548; 
+        }
+        .client-section div a {
+            color: #2e7d32; 
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .client-section div a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <a href="Home.html"><img src="logo farmers.png" alt=""></a>
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+            </li>
+        <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+        <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+        <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+        <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+        <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+            Join Us</a></li>
+        <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+        
+     
+        </ul>
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+<section class="client-section">
+    <h2>Our Clients</h2>
+    <p>At FarmTech Solutions, we pride ourselves on our commitment to providing high-quality products and services to our clients. Here's what some of our valued clients have to say about us:</p>
+
+    <div class="client">
+        <img src="https://img.freepik.com/free-photo/world-photography-day-celebrated-by-middle-aged-man-taking-photos-with-camera-device_23-2151672456.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Client 1">
+        <p>"FarmTech's weather prediction feature has helped me plan my sowing and harvesting more efficiently. The automated irrigation system has also saved water and reduced my workload. However, I'd like to see more language options in the app for better accessibility."</p>
+        <h4>Name: Ramappa, Location: Telangana</h4>
+    </div>
+
+    <div class="client">
+        <img src="https://www.storyofsouls.com/wp-content/uploads/2022/02/indian-farmer.jpg" alt="Client 2">
+        <p>"The pest detection tool is a game-changer for my paddy fields. I can easily identify and control infestations before they spread. The soil health monitoring is also quite accurate, but I faced issues with the mobile app loading slowly at times."</p>
+        <h4>Name: Manju, Location: Andhra Pradesh</h4>
+    </div>
+
+    <div class="client">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpx1Jykhbn1icVCTT4pIdgaeHlKWlBqiaMyw&usqp=CAU" alt="Client 3">
+        <p>"I found the crop management solutions very useful, especially the suggestions for crop rotation and fertilizers. My yields have increased by 20% since using FarmTech solutions. However, it would be great if the customer support could respond quicker when we face technical issues."</p>
+        <h4>Name: Vijay Kumar, Location: Karnataka</h4>
+    </div>
+    <div class="client">
+        <img src="https://images.pexels.com/photos/20503610/pexels-photo-20503610/free-photo-of-farmers-in-india.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Client 3">
+        <p>"FarmTech’s satellite imagery and real-time data on crop growth have helped me make timely decisions, especially during the drought. However, the initial setup for the IoT sensors was a bit complicated, and I needed help to install them."
+        </p>
+        <h4>Name: Saraswathi, Location: Tamil Nadu</h4>
+    </div>
+    <div class="client">
+        <img src="https://img.freepik.com/free-photo/portrait-indian-man-bazaar_23-2150913266.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Client 3">
+        <p>"I’ve been using the FarmTech irrigation system for over a year now, and it's greatly reduced my water consumption. The crop advisory system also gives personalized recommendations, but I wish the updates for new crops would come more frequently."</p>
+        <h4>Name: Balasubramaniam, Location: Maharashtra</h4>
+    </div>
+    <div class="client">
+        <img src="https://images.stockcake.com/public/8/7/a/87a4e01e-0243-4a3b-87ac-9bbc9c13c556_medium/happy-farmer-smiling-stockcake.jpg" alt="Client 6">
+        <p>"FarmTech has simplified my work significantly. I rely heavily on their soil health monitoring and automated irrigation system. However, the pricing for the advanced features could be a bit more affordable for small-scale farmers."</p>
+        <h4>Name: Shyam, Location: Rajasthan</h4>
+    </div>
+
+    <div class="client">
+        <img src="https://t4.ftcdn.net/jpg/04/62/66/23/360_F_462662343_Xq1QxYaL6aGdelYq3o2Yfo6saJrMSx0x.jpg" alt="Client 7">
+        <p>"The Website interface is user-friendly, and the crop health monitoring tool has been invaluable for identifying potential problems early. However, I'd love to see more detailed tutorials on using the more advanced tools."</p>
+        <h4>Name: Arjun, Location: Gujarat</h4>
+    </div>
+
+    <div class="client">
+        <img src="https://i.pinimg.com/736x/24/0a/ae/240aae73ea2c10c3a8ba4f501de3f9d6.jpg" alt="Client 8">
+        <p>"FarmTech’s solutions have helped me cut down on labor costs and improve the efficiency of my farm. The remote monitoring feature is very useful, but I had some trouble with connectivity issues in my area."</p>
+        <h4>Name: Ramesh, Location: Uttar Pradesh</h4>
+    </div>
+    <div class="client">
+         <img src="https://media.istockphoto.com/id/1415123613/photo/young-professional-leader-asian-woman-manager-wearing-suit-outdoor-portrait.jpg?s=612x612&w=0&k=20&c=lMQbSQ6NX6h8ljul6HMipldeBRQMc_Z1lyuaMUSKuHQ=" alt="Client 1">
+          <p>"FarmTech’s organic produce monitoring has been a game changer for our farm-to-table restaurant. The freshness and quality of the produce we receive have improved dramatically. However, integrating more local farms into their network would help with regional variety."</p> 
+          <h4>Name: Priya,Restaurant owner , Location: Mumbai</h4> </div>
+          <div class="client">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv5XTKM52QrN8dy-KiOrx5YHBycZP9iVcmaQ&usqp=CAU" alt="Client 2"> <p>"We organize eco-friendly events, and FarmTech's sustainable farming solutions help us source environmentally conscious ingredients. Their real-time supply updates are very useful. Expanding their service to more rural suppliers would make event planning even smoother."</p> 
+            <h4>Name: Amit, Event Organizer, Location: New Delhi</h4>
+         </div>
+         <div class="client"> <img src="data:image/jpeg;base64,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" alt="Client 3">
+             <p>"Thanks to FarmTech, we’ve been able to support local farmers while ensuring top-quality produce for our hotel restaurant. The automated irrigation systems they promote are impressive, though a bit expensive for smaller establishments like ours."</p>
+              <h4>Name: Rakesh , Hotel Owne , Location: Goa</h4> </div>
+
+    <div>
+        <p>Interested in becoming a client of FarmTech Solutions? Contact us today to learn more about our products and services.</p>
+        <a href="ConatctUs.html">Contact Us</a>
+    </div>
+    
+</section>
+
+
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy; 1999 - 2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

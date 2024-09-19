@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+
+    <title>FarmTech Solutions-Gallery</title>
+    <style>
+      body{
+            background-color: #F1F8E9;
+
+        }
+       
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   border: none;
+    margin-top: -140px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:    black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+.third li{
+    
+    box-sizing: border-box;
+    
+  
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }
+  .dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 35px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+    
+   
+    
+   
+}
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+    border: none;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    position: relative;
+    top:30px;
+    left: 90px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.total-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.first-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.third{
+    margin-left: 100px;
+}
+.thirddiv-item img{
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-top: -37px;
+    
+}
+
+.pic-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pic-1 img {
+    width:500px;
+    height: 300px;
+}
+
+.column-2 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.col-2-1 img, .col-2-2 img {
+    width: 500px;
+    height: 150px;
+  
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+.second-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    filter: blur(1px);
+}
+.images-second-cotainer img{
+    width: 300px;
+    height:300px;
+  
+}
+.third-conatainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.third-conatainer img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+
+}
+.fourth-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.first-column-first-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.first-column-first-row img {
+    width: 200px;
+    height: 100px;
+}
+
+.first-column-fifth {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}
+
+.second-column-fourth {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 50px;
+    width: 400px;
+    margin-top: -15px;
+}
+
+.second-column-fourth img {
+    width: 400px;
+    height: 200px;
+}
+
+.titles {
+    font-family: 'Georgia', serif;
+    font-size: 2.2em;
+    color: #4CAF50;
+    text-align: center;
+   
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #A8E063, #56AB2F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 0px;
+}
+
+
+
+.fifth-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.fifth-container img {
+    width: 400px;
+    height: 300px;
+}
+.chemical-farming{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin-left: 400px;
+
+
+}
+.chemical-farming img{
+    width: 400px;
+    height: 200px;
+    margin: 15px;
+
+}
+.first-row-sixth{
+    display: flex;
+    flex-direction: row;
+
+}
+.first-row-sixth img{
+    width: 300px;
+    height: 200px;
+}
+.seventh-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+
+}
+.seventh-container img{
+    width: 200px;
+    height: 200px;
+   
+}
+img{
+    border-radius: 20px;
+    border: 0.5px solid black;
+}
+.name h1 {
+    
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <a href="Home.html"><img src="logo farmers.png" alt=""></a>
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+            </li>
+        <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+        <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+        <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+        <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+        <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+            Join Us</a></li>
+        <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+        </ul>
+     
+        
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+<h1 class="titles">Services</h1>
+<div class="first-container">
+    <div class="pic-1">
+        <img src="https://2.wlimg.com/product_images/bc-full/2020/4/4944454/contract-farming-services-1588245780-5401679.jpeg" alt="">
+    </div>
+    <div class="column-2">
+        <div class="col-2-1">
+     <img src="https://img3.exportersindia.com/product_images/bc-full/2022/7/7325889/contract-farming-services-1658479941-6458351.jpeg" alt="">
+        </div>
+        <div class="col-2-2">
+<img src="https://www.hbtbank.com/media/uploads/Headers/_1200x630_crop_center-center_82_none/L2_AgServices.jpg?mtime=1579205330" alt="">
+        </div>
+ 
+
+ 
+    
+</div>
+
+</div>
+<h1 class="titles">Ploughing</h1>
+<div class="third-conatainer"><img src="https://5.imimg.com/data5/GV/VW/ID/GLADMIN-23825967/selection-317.png" alt="">
+    <img src="https://images.pexels.com/photos/26845309/pexels-photo-26845309/free-photo-of-oxen-plowing-the-field-and-men-walking-behind-them.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img src="https://img.freepik.com/free-photo/tractor-agricultural-machine-cultivating-field_342744-896.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="">
+    <img src="plowing.jpg" alt="">
+</div>
+
+
+
+<h1 class="titles">Crop Monitoring</h1>
+<div class="fourth-container">
+    <div class="first-column-fifth">
+        <div class="first-column-first-row">
+            <img src="https://img.freepik.com/free-photo/female-researchers-examined-tobacco-leaves_1150-5876.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Researcher examining tobacco leaves">
+            <img src="https://img.freepik.com/free-photo/farmer-with-tablet-working-organic-hydroponic-vegetable-garden-greenhouse-smart-agriculture-farm-sensor-technology-concept-farmer-hand-using-tablet-monitoring-temperature_1150-10648.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Farmer using tablet in greenhouse">
+        </div>
+        <img src="https://img.freepik.com/free-photo/agronomist-inspecting-maize-leaf-medium-view_23-2148233364.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Agronomist inspecting maize">
+        <img src="https://img.freepik.com/free-photo/growing-organic-ecological-plants-fields-background_1268-30622.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Organic ecological plants in the field">
+    </div>
+    <div class="second-column-fourth">
+        <img src="https://img.freepik.com/free-photo/tractor-field-ai-generated_268835-11230.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Tractor in the field">
+        <img src="https://img.freepik.com/free-photo/farmer-standing-rice-field-with-tablet_1150-6046.jpg?uid=R109178239&ga=GA1.2.1695817729.1686491307&semt=ais_hybrid" alt="Cartoon farm landscape">
+        <img src="https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Green tea plantation">
+    </div>
+</div>
+
+<h1 class="titles organic-title">Organic Farming</h1>
+
+<div class="fifth-container">
+    <div class="column-1-fifth">
+        <img src="https://img.freepik.com/free-photo/hydroponics-system-planting-vegetables-herbs-without-using-soil-health_1150-8154.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Hydroponics system for planting">
+        <img src="https://img.freepik.com/free-photo/beautiful-woman-works-garden_1157-24640.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="Woman working in garden">
+    </div>
+    <div class="column-2-fifth">
+        <img src="https://i.pinimg.com/736x/ef/98/b7/ef98b7fa7f748e91da044dc0e2285dde.jpg" alt="Organic farming process">
+        <img src="https://img.freepik.com/free-photo/some-vegetables-basket-sunlight_268835-991.jpg" alt="Soil for farming">
+    </div>
+</div>
+<h1 class="titles">Chemical Farming</h1>
+<div class="chemical-farming">
+    <div class="first-row-sixth">
+    <img src="https://res.cloudinary.com/dm71xhdxd/image/upload/v1714197447/uab/Fertilizer_Organic_Bio_products_argh5b.jpg" alt="">
+    <img src="https://kamalafarms.com/wp-content/uploads/2022/06/hydroponics-12.jpg" alt="">
+    
+</div>
+
+<img src="https://img.freepik.com/free-photo/female-scientist-writing-report-quality-control-inspection-plant-nursery_637285-1553.jpg?t=st=1726060470~exp=1726064070~hmac=8731ee152c650c6c82a2ca9db077401c3cb3601238feb87e0b239d656446e337&w=996" alt="">
+</div>
+<h1 class="titles">Harvesting</h1>
+<div class="second-container">
+    <div class="images-second-cotainer"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/woman-harvesting-rice-by-hand-oneclearvision.jpg" alt=""></div>
+    <div class="images-second-cotainer"><img src="https://img.freepik.com/free-photo/combine-harvester-working-field_342744-548.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt=""></div>
+    <div class="images-second-cotainer"><img src="https://th-i.thgim.com/public/news/cities/Tiruchirapalli/satma9/article26066848.ece/alternates/LANDSCAPE_1200/TY23-HARVEST" alt=""></div>
+    <div class="images-second-cotainer"><img src="https://img.freepik.com/free-photo/medium-shot-smiley-kid-corn-field_23-2149147871.jpg?semt=ais_hybrid" alt=""></div>
+    <div class="images-second-cotainer"><img src="https://img.freepik.com/free-photo/combine-harvester-working-wheat-field_342744-567.jpg?semt=ais_hybrid" alt=""></div>
+    <div class="images-second-cotainer"><img src="https://img.freepik.com/free-photo/taking-cotton-from-branch-by-farmer_114579-3992.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="">
+    <img src="https://img.freepik.com/free-photo/african-man-harvesting-vegetables_23-2151441245.jpg?semt=ais_hybrid" alt="">
+<img src="https://images.stockcake.com/public/5/2/a/52a1ad14-99d3-4494-a6d9-2aa7de66e235_large/farmer-flying-drone-stockcake.jpg" alt=""></div>
+
+</div>
+<h1 class="titles">Products Selling</h1>
+<div class="seventh-container">
+    <div class="first-column">
+        <div class="image-1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgvVUGBtKsQ0fMGIB8RF11_pKkaPt0_--ezg&usqp=CAU" alt="">
+        </div>
+        <div class="image-2">
+            <img src="https://img.freepik.com/free-photo/view-man-handling-money-funds-wealth-prosperity_23-2151660785.jpg?semt=ais_hybrid" alt="">
+        </div>
+    </div>
+    <div class="first-column">
+        <div class="image-1">
+            <img src="https://img.freepik.com/free-photo/farmers-are-working-chinese-cabbage-farm_1150-7106.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="">
+
+        </div>
+        <div class="image-2">
+            <img src="https://img.freepik.com/free-photo/portrait-person-eating-watermelon_23-2151553591.jpg?uid=R109178239&ga=GA1.1.1695817729.1686491307&semt=ais_hybrid" alt="">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy;2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

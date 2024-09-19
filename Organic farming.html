@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/liodys/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+   max-width: 100%;
+   
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.img {
+    display: block;
+    margin: 20px auto;
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-links {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
+
+.language-links .link {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.language-links .link:hover {
+    color: green;
+}
+
+body{
+            background-color: #F1F8E9;
+
+        }
+       
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:   black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+.third li{
+    
+    box-sizing: border-box;
+    
+  
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+  }
+.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 32px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+}
+
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+.content{
+    margin:20px 50px;
+    width: 1100px;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+.first-nav-second h1{
+    color: #ffffff;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.footer-part{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    margin-top: -10px;
+   
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+
+.social-icons a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  
+    
+}
+.name h1 {
+    
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-left: 350px;
+}
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+.Hindi-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.section{
+    margin:40px 0px;
+  
+    border-radius: 40px;
+    padding: 30px;
+    transition: transform 0.2s ease-out;
+
+}
+.section:hover{
+    box-shadow: 1px 1px 1px 1px black;
+    transform: scale(1.04);
+}
+.buy-products{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 550px;
+}
+.language-links a{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+   
+    position: relative;
+    top: 30px;
+}
+
+   </style>
+</head>
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <img src="logo farmers.png" alt="">
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+            </li>
+        <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+        <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+        <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+        <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+        <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+            Join Us</a></li>
+        <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+        </ul>
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+    <header>
+
+        <h1>Organic Farming</h1>
+        <img src="https://wallpapers.com/images/hd/organic-farming-1162-x-700-wallpaper-snmzav3nv42lgclu.jpg" alt="Organic Farming Image" class="img">
+        <h2>Select your language</h2>
+        <div class="language-links">
+            <a href="#Telugu" class="Telugu-button">Telugu</a>
+            <a href="#English" class="English-Button">English</a>
+            <a href="#Hindi" class="Hindi-Button">Hindi</a>
+        </div>
+    </header>
+    <section class="content" id="English">
+       
+            <div class="english">
+            <h3>In English</h3>
+            <p>In organic farming, various natural and sustainable methods are used to promote soil fertility, plant growth, and ecosystem balance.</p>
+            <div class="english-content">
+            <div class="section">
+                <h4>Soil Management:</h4>
+                <ul>
+                    <li>Composting: Decomposed organic matter.</li>
+                    <li>Manure: Animal waste.</li>
+                    <li>Green manure: Legume cover crops.</li>
+                    <li>Mulching: Organic materials (straw, leaves).</li>
+                    <li>Crop rotation: Rotating crops for soil health.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Pest and Disease Control:</h4>
+                <ul>
+                    <li>Integrated Pest Management (IPM): Combining techniques.</li>
+                    <li>Biological control: Beneficial insects, microorganisms.</li>
+                    <li>Organic pesticides: Neem oil, pyrethrin.</li>
+                    <li>Physical barriers: Row covers.</li>
+                    <li>Crop resistance: Breeding for disease resistance.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Fertilizers:</h4>
+                <ul>
+                    <li>Organic compost.</li>
+                    <li>Manure tea.</li>
+                    <li>Fish emulsion.</li>
+                    <li>Bone meal.</li>
+                    <li>Alfalfa meal.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Weed Control:</h4>
+                <ul>
+                    <li>Hand weeding.</li>
+                    <li>Mulching.</li>
+                    <li>Cover cropping.</li>
+                    <li>Crop rotation.</li>
+                    <li>Mechanical weeding.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Water Management:</h4>
+                <ul>
+                    <li>Rainwater harvesting.</li>
+                    <li>Drip irrigation.</li>
+                    <li>Mulching.</li>
+                    <li>Conservation tillage.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Organic Farming Tools:</h4>
+                <ul>
+                    <li>Hand tools (e.g., hoes, rakes).</li>
+                    <li>Animal-drawn equipment.</li>
+                    <li>Small-scale machinery.</li>
+                    <li>Tractors with organic-friendly attachments.</li>
+                    <li>Precision agriculture tools.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Organic Farming Benefits:</h4>
+                <ul>
+                    <li>Environmental conservation.</li>
+                    <li>Improved soil health.</li>
+                    <li>Increased biodiversity.</li>
+                    <li>Better crop quality.</li>
+                    <li>Enhanced ecosystem services.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+   
+        <section class="Telugu" id="Telugu">
+            <h3>In Telugu</h3>
+            <div class="telugu-content">
+                <p>సేంద్రీయ వ్యవసాయంలో, నేల సంతానోత్పత్తి, మొక్కల పెరుగుదల మరియు పర్యావరణ వ్యవస్థ సమతుల్యతను ప్రోత్సహించడానికి వివిధ సహజ మరియు స్థిరమైన పద్ధతులు ఉపయోగించబడతాయి. సేంద్రీయ వ్యవసాయంలో ఉపయోగించే కొన్ని కీలక పద్ధతులు మరియు పదార్థాలు:</p>
+                
+                <div class="section">
+                <ul>నేల నిర్వహణ:
+                <li>
+                 కంపోస్టింగ్: కుళ్ళిన సేంద్రియ పదార్థం.</li>
+                <li> పేడ: జంతు వ్యర్థాలు.</li>
+                <li>పచ్చిరొట్ట ఎరువు: చిక్కుళ్ళు కప్పే పంటలు.</li>
+                <li>మల్చింగ్: సేంద్రీయ పదార్థాలు (గడ్డి, ఆకులు).</li>
+                <li> పంట మార్పిడి: నేల ఆరోగ్యం కోసం పంటలను తిప్పడం</li>
+            </ul>
+        </div>
+                <div class="section">
+                <ul>తెగులు మరియు వ్యాధి నియంత్రణ:
+                <li>ఇంటిగ్రేటెడ్ పెస్ట్ మేనేజ్‌మెంట్ (IPM): కంబైనింగ్ టెక్నిక్‌లు.</li>
+                <li> జీవ నియంత్రణ: ప్రయోజనకరమైన కీటకాలు, సూక్ష్మజీవులు.</li>
+                <li>సేంద్రీయ పురుగుమందులు: వేపనూనె, పైరేత్రిన్.</li>
+                <li> భౌతిక అడ్డంకులు: వరుస కవర్లు.</li>
+                <li> పంట నిరోధం: వ్యాధి నిరోధకత కోసం పెంపకం.</li></ul>
+                </div>
+                <div class="section">
+                <ul>ఎరువులు:
+                <li>సేంద్రీయ కంపోస్ట్.</li>
+                <li> పేడ టీ.</li>
+                <li>ఫిష్ ఎమల్షన్.</li>
+                <li> ఎముక భోజనం.</li>
+                <li>అల్ఫాల్ఫా భోజనం.</li></div><br>
+                <div class="section">
+                <ul>కలుపు నివారణ:</ul>
+                <li> చేతి కలుపు తీయుట.</li>
+                <li>మల్చింగ్.</li>
+                <li>కవర్ క్రాపింగ్.</li>
+                <li>పంట భ్రమణం.</li>
+                <li> యాంత్రిక కలుపు తీయుట.</li></ul></div>
+                <div class="section"><ul>
+                నీటి నిర్వహణ:</ul>
+                <li>వర్షపు నీటి సంరక్షణ.</li>
+                <li> బిందు సేద్యం.</li>
+                <li> మల్చింగ్.</li>
+                <li> పరిరక్షణ సాగు.</li></ul>
+                </div>
+                <div class="section"><ul>
+                    సేంద్రీయ వ్యవసాయ సాధనాలు:</ul>
+                    <li> హ్యాండ్ టూల్స్ (ఉదా., హోస్, రేక్స్).</li>
+                    <li> జంతువు-గీసిన పరికరాలు.</li>
+                    <li>చిన్న తరహా యంత్రాలు.</li>
+                    <li> సేంద్రీయ-స్నేహపూర్వక జోడింపులతో ట్రాక్టర్లు.</li>
+                    <li> ఖచ్చితమైన వ్యవసాయ సాధనాలు.</li></div><br>
+                    <div class="section">
+                    <ul>సేంద్రీయ వ్యవసాయం ప్రయోజనాలు:</ul>
+                    <li>పర్యావరణ పరిరక్షణ.</li>
+                    <li> నేల ఆరోగ్యం మెరుగుపడుతుంది.</li>
+                    <li> పెరిగిన జీవవైవిధ్యం.</li>
+                    <li> మెరుగైన పంట నాణ్యత.</li>
+                    <li>మెరుగైన పర్యావరణ వ్యవస్థ సేవలు.</li> </ul></div>
+                    </div>
+                    
+                
+                
+           
+        </div>
+ 
+ 
+</div>
+        </section>
+   
+        <div class="hindi" id="Hindi">
+            <h3>In Hindi</h3>
+            <div class="Hindi-content">
+            <div class="section"><ul>मृदा प्रबंधन:
+
+                <li> खाद बनाना: विघटित कार्बनिक पदार्थ।</li>
+                <li> खाद: पशु अपशिष्ट।</li>
+                <li>हरी खाद: फलियां ढकने वाली फसलें।</li>
+                <li>मल्चिंग: जैविक सामग्री (पुआल, पत्तियां)।</li>
+                <li>फसल चक्र: मृदा स्वास्थ्य के लिए फसल चक्र।</li></ul></div><br>
+                <div class="section">
+                <ul>
+                कीट एवं रोग नियंत्रण:
+                <li> एकीकृत कीट प्रबंधन (आईपीएम): तकनीकों का संयोजन।</li>
+                <li> जैविक नियंत्रण: लाभकारी कीट, सूक्ष्मजीव।</li>
+                <li>जैविक कीटनाशक: नीम का तेल, पाइरेथ्रिन।</li>
+                <li> भौतिक बाधाएँ: पंक्ति कवर।</li>
+                <li> फसल प्रतिरोध: रोग प्रतिरोधक क्षमता के लिए प्रजनन।</li></ul></div><br>
+                <div class="section"><ul>
+                उर्वरक:
+                <li> जैविक खाद.</li>
+                <li> खाद चाय.</li>
+                <li> मछली का पायस।</li>
+                <li>अस्थि भोजन.</li>
+                <li> अल्फाल्फा भोजन.</li></ul></div><br>
+                <div class="section"><ul>
+                खरपतवार नियंत्रण:
+                <li>हाथ से निराई करना।</li>
+                <li> मल्चिंग।</li>
+                <li> कवर क्रॉपिंग.</li>
+                <li>फसल चक्र.</li>
+                <li>यांत्रिक निराई।</li></ul>
+            </div><br>
+                <div class="section">
+                <ul>जल प्रबंधन:
+                <li>वर्षा जल संचयन.</li>
+                <li> ड्रिप सिंचाई.</li>
+                <li>मल्चिंग।</li>
+                <li>संरक्षण जुताई.
+                </li></ul></div><br>
+                <div class="section">
+                <ul>
+                जैविक खेती के उपकरण:
+                <li> हाथ के औज़ार (जैसे, कुदाल, रेक)।</li>
+                <li> जानवरों द्वारा खींचे जाने वाले उपकरण।<li>
+                <li> छोटे पैमाने की मशीनरी।</li>
+                <li>जैविक-अनुकूल संलग्नक वाले ट्रैक्टर।</li>
+                <li>परिशुद्ध कृषि उपकरण.</li></ul>
+                </div><br>
+                <div class="section"><ul>
+                जैविक खेती के लाभ:
+                
+                <li> पर्यावरण संरक्षण.</li>
+                <li>मृदा स्वास्थ्य में सुधार।</li>
+                <li> जैव विविधता में वृद्धि.</li>
+                <li> बेहतर फसल गुणवत्ता</li>
+                <li>उन्नत पारिस्थितिकी तंत्र सेवाएँ।</li></ul>
+                </div>
+            </div>
+                
+        </div>
+    
+    </div>
+    <a href="Products Buying.html#Organic-buy" class="buy-products">Buy Products</a>
+
+        </div>
+    </section>
+
+
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy;2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

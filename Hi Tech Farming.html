@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitech Farming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+  
+    
+    <style>
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+   max-width: 100%;;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.img {
+    display: block;
+    margin: 20px auto;
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.language-links .link {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.language-links .link:hover {
+    color: green;
+}
+
+
+body{
+            background-color: #F1F8E9;
+
+        }
+       
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second h1{
+    color: #ffffff;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:    black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+.third li{
+    
+    box-sizing: border-box;
+    
+  
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }
+.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 31px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;  
+}
+
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+.content{
+    margin:20px 50px;
+    width: 1100px;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+#ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+
+.social-icons a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  
+    
+}
+.name h1 {
+    
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-left: 350px;
+}
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+.Hindi-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.section{
+    margin:40px 0px;
+
+    border-radius: 40px;
+    padding: 30px;
+    transition: transform 0.2s ease-in;
+
+}
+.section:hover{
+    transform: scale(1.04);
+    box-shadow: 0.5px 1px 1px 1px gray;
+}
+.buy-products{
+    padding: 10px 5px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+   
+    margin-bottom: 50px;
+
+}
+.button-class{
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+
+
+}
+.language-links a{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+   
+    position: relative;
+    top: 30px;
+}
+   </style>
+</head>
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <a href="Home.html"><img src="logo farmers.png" alt=""></a>
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+            </li>
+        <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+        <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+        <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+        <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+        <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+            Join Us</a></li>
+        <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+        </ul>
+     
+        
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+
+    <header>
+
+        <h1>Hitech Farming</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/028/792/205/large_2x/drone-monitoring-crops-and-smart-agriculture-in-a-digital-farming-ai-generative-free-photo.jpg" alt="Organic Farming Image" class="img">
+        <h2>Select your language</h2>
+        <nav class="language-links">
+            <a href="#Telugu" class="Telugu-button">Telugu</a>
+            <a href="#English" class="English-Button">English</a>
+            <a href="#Hindi" class="Hindi-Button">Hindi</a>
+        </nav>
+    </header>
+    <section id="English">
+        <div class="content">
+        <h3>In English</h3>
+        <p>High-tech farming, also known as precision agriculture or smart farming, utilizes advanced technology to increase efficiency, productivity, and sustainability. Some key tools and technologies used in high-tech farming include:</p>
+    
+        <div class="section">
+            <h4>Hardware:</h4>
+            <ul>
+                <li>Drones: Crop monitoring</li>
+                <li>Autonomous tractors: GPS-guided farming</li>
+                <li>Greenhouses: Climate-controlled environments</li>
+                <li>Vertical farming systems: Hydroponics, aeroponics</li>
+                <li>Farm robots: Automated crop monitoring, harvesting</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Software:</h4>
+            <ul>
+                <li>Farm management software (FMS): Crop planning, yield analysis</li>
+                <li>Precision agriculture platforms: Data analytics, decision support</li>
+                <li>Mobile apps: Weather forecasting, soil health monitoring</li>
+                <li>Geographic Information Systems (GIS): Spatial analysis</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Sensors and IoT:</h4>
+            <ul>
+                <li>Soil moisture sensors: Optimize irrigation</li>
+                <li>Temperature sensors: Monitor climate conditions</li>
+                <li>Humidity sensors: Optimize crop growth</li>
+                <li>Yield sensors: Monitor crop yields</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Data Analytics:</h4>
+            <ul>
+                <li>Yield mapping: Identify areas for improvement</li>
+                <li>Crop health analysis: Detect diseases, pests</li>
+                <li>Soil health analysis: Optimize fertilizer application</li>
+                <li>Weather forecasting: Plan farming operations</li>
+                <li>Market analysis: Optimize pricing, sales</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Biotechnology:</h4>
+            <ul>
+                <li>Genetic engineering: Disease-resistant crops</li>
+                <li>Gene editing: Improve crop yields</li>
+                <li>Precision breeding: Accelerate crop improvement</li>
+                <li>Biostimulants: Enhance plant growth</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Increased efficiency</li>
+                <li>Improved crop yields</li>
+                <li>Enhanced sustainability</li>
+                <li>Reduced labor costs</li>
+                <li>Data-driven decision-making</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h4>Examples of High-Tech Farming:</h4>
+            <ul>
+                <li>John Deere (precision agriculture)</li>
+                <li>Granular (farm management software)</li>
+                <li>FarmWise (autonomous farming)</li>
+                <li>Indigo Ag (precision agriculture platform)</li>
+                <li>Bowery Farming (vertical farming)</li>
+            </ul>
+        </div>
+        </div>
+        
+    </section>
+    <section id="Telugu"  class="Telugu">
+ 
+        <div class="content">
+        <h3>In Telugu</h3>
+        
+        <p> ఖచ్చితమైన వ్యవసాయం లేదా స్మార్ట్ వ్యవసాయం అని కూడా పిలువబడే హై-టెక్ వ్యవసాయం, సమర్థత, ఉత్పాదకత మరియు స్థిరత్వాన్ని పెంచడానికి అధునాతన సాంకేతికతను ఉపయోగిస్తుంది. హైటెక్ వ్యవసాయంలో ఉపయోగించే కొన్ని కీలక సాధనాలు మరియు సాంకేతికతలు:</p>
+        <div class="section">
+        <h4>హార్డ్‌వేర్:</h4><ul>
+        <li>అటానమస్ ట్రాక్టర్లు: GPS-గైడెడ్ వ్యవసాయం.</li>
+        <li>ఖచ్చితమైన నీటిపారుదల వ్యవస్థలు: నేల తేమ సెన్సార్లు, బిందు సేద్యం.</li>
+        <li>గ్రీన్‌హౌస్‌లు: వాతావరణ-నియంత్రిత పరిసరాలు.</li>
+        <li>నిలువు వ్యవసాయ వ్యవస్థలు: హైడ్రోపోనిక్స్, ఏరోపోనిక్స్.</li>
+        <li> వ్యవసాయ రోబోట్లు: స్వయంచాలక పంట పర్యవేక్షణ, హార్వెస్టింగ్.</li></ul></div>
+        <div class="section">
+        <h4>సాఫ్ట్‌వేర్:</h4><ul>
+        <li> వ్యవసాయ నిర్వహణ సాఫ్ట్‌వేర్ (FMS): పంట ప్రణాళిక, దిగుబడి విశ్లేషణ.</li>
+        <li> ప్రెసిషన్ అగ్రికల్చర్ ప్లాట్‌ఫారమ్‌లు: డేటా అనలిటిక్స్, డెసిషన్ సపోర్ట్.</li>
+        <li>మొబైల్ యాప్‌లు: వాతావరణ సూచన, నేల ఆరోగ్య పర్యవేక్షణ.</li>
+        <li> ఆర్టిఫిషియల్ ఇంటెలిజెన్స్ (AI) మరియు మెషిన్ లెర్నింగ్ (ML): ప్రిడిక్టివ్ అనలిటిక్స్.</li>
+        <li> భౌగోళిక సమాచార వ్యవస్థలు (GIS): ప్రాదేశిక విశ్లేషణ.</li></ul></div>
+        <div class="section">
+        <h4>సెన్సార్లు మరియు IoT:</h4><ul>
+        <li> నేల తేమ సెన్సార్లు: నీటిపారుదలని ఆప్టిమైజ్ చేయండి.</li>
+        <li> ఉష్ణోగ్రత సెన్సార్లు: వాతావరణ పరిస్థితులను పర్యవేక్షించండి.</li>
+        <li> తేమ సెన్సార్లు: పంట పెరుగుదలను ఆప్టిమైజ్ చేయండి.</li>
+        <li>దిగుబడి సెన్సార్లు: పంట దిగుబడిని పర్యవేక్షించండి.</li>
+        <li> వాతావరణ స్టేషన్లు: నిజ-సమయ వాతావరణ డేటా.</li></ul></div>
+        <div class="section">
+        <h4>డేటా అనలిటిక్స్:</h4><ul>
+        <li>దిగుబడి మ్యాపింగ్: అభివృద్ధి కోసం ప్రాంతాలను గుర్తించండి</li>.
+        <li> పంట ఆరోగ్య విశ్లేషణ: వ్యాధులు, తెగుళ్లను గుర్తించడం.</li>
+        <li>నేల ఆరోగ్య విశ్లేషణ: ఎరువుల దరఖాస్తును ఆప్టిమైజ్ చేయండి.</li>
+        <li>వాతావరణ అంచనా: వ్యవసాయ కార్యకలాపాలను ప్లాన్ చేయండి.</li>
+        <li>మార్కెట్ విశ్లేషణ: ధర, విక్రయాలను ఆప్టిమైజ్ చేయండి.</li></ul></div>
+        <div class="section">
+        <h4>బయోటెక్నాలజీ:</h4><ul>
+        
+        <li>జన్యు ఇంజనీరింగ్: వ్యాధి-నిరోధక పంటలు.</li>
+        <li>జన్యు సవరణ: పంట దిగుబడిని మెరుగుపరచండి.</li>
+        <li>ఖచ్చితమైన పెంపకం: పంట అభివృద్ధిని వేగవంతం చేయండి.</li>
+        <li>బయోస్టిమ్యులెంట్లు: మొక్కల పెరుగుదలను మెరుగుపరుస్తాయి.</li></ul></div>
+        <div class="section">
+        <h4>ప్రయోజనాలు:</h4><ul>
+        <li>పెరిగిన సామర్థ్యం</li>
+        <li>మెరుగైన పంట దిగుబడి</li>
+        <li>మెరుగైన స్థిరత్వం</li>
+        <li>తగ్గిన కార్మిక వ్యయాలు</li>
+        <li> డేటా ఆధారిత నిర్ణయం తీసుకోవడం</li></ul></div>
+        <div class="section">
+        <h4>హైటెక్ ఫార్మింగ్ కంపెనీల ఉదాహరణలు:</h4><ul>
+        <li> జాన్ డీరే (ఖచ్చితమైన వ్యవసాయం)</li>
+        <li>గ్రాన్యులర్ (వ్యవసాయ నిర్వహణ సాఫ్ట్‌వేర్)</li>
+        <li>ఫార్మ్ వైజ్ (స్వయంప్రతిపత్తి వ్యవసాయం)</li>
+        <li> ఇండిగో Ag (ఖచ్చితమైన వ్యవసాయ వేదిక)</li>
+        <li>బోవరీ ఫార్మింగ్ (నిలువు వ్యవసాయం)</li></ul></div>
+        </div></div></div>
+        </section>
+        <section id="Hindi" class="hindi">
+            <div class="content">
+              <h3>In Hindi</h3>
+          
+              <p>हाई-टेक खेती, जिसे प्रेसिजन एग्रीकल्चर या स्मार्ट खेती के रूप में भी जाना जाता है, दक्षता, उत्पादकता और स्थिरता बढ़ाने के लिए उन्नत तकनीक का उपयोग करती है। हाई-टेक खेती में उपयोग किए जाने वाले कुछ प्रमुख उपकरण और तकनीकें इस प्रकार हैं:</p>
+          
+              <div class="section">
+                <h4>हार्डवेयर:</h4>
+                <ul>
+                  <li>स्वायत्त ट्रैक्टर: जीपीएस-निर्देशित खेती।</li>
+                  <li>प्रेसिजन सिंचाई प्रणाली: मिट्टी की नमी सेंसर, ड्रिप सिंचाई।</li>
+                  <li>ग्रीनहाउस: जलवायु-नियंत्रित वातावरण।</li>
+                  <li>वर्टिकल फार्मिंग सिस्टम: हाइड्रोपोनिक्स, एरोपोनिक्स।</li>
+                  <li>फार्म रोबोट: स्वचालित फसल निगरानी, ​​कटाई।</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>सॉफ्टवेयर:</h4>
+                <ul>
+                  <li>फार्म प्रबंधन सॉफ्टवेयर (एफएमएस): फसल नियोजन, उपज विश्लेषण।</li>
+                  <li>प्रेसिजन एग्रीकल्चर प्लेटफॉर्म: डेटा एनालिटिक्स, निर्णय समर्थन।</li>
+                  <li>मोबाइल ऐप: मौसम का पूर्वानुमान, मिट्टी के स्वास्थ्य की निगरानी।</li>
+                  <li>आर्टिफिशियल इंटेलिजेंस (एआई) और मशीन लर्निंग (एमएल): पूर्वानुमानात्मक विश्लेषण।</li>
+                  <li>भौगोलिक सूचना प्रणाली (जीआईएस): स्थानिक विश्लेषण।</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>सेंसर और IoT:</h4>
+                <ul>
+                  <li>मृदा नमी सेंसर: सिंचाई को अनुकूलित करें।</li>
+                  <li>तापमान सेंसर: जलवायु स्थितियों की निगरानी करें।</li>
+                  <li>आर्द्रता सेंसर: फसल की वृद्धि को अनुकूलित करें।</li>
+                  <li>उपज सेंसर: फसल की पैदावार की निगरानी करें।</li>
+                  <li>मौसम केंद्र: वास्तविक समय का मौसम डेटा।</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>डेटा विश्लेषण:</h4>
+                <ul>
+                  <li>उपज मानचित्रण: सुधार के लिए क्षेत्रों की पहचान करें।</li>
+                  <li>फसल स्वास्थ्य विश्लेषण: बीमारियों, कीटों का पता लगाएं।</li>
+                  <li>मृदा स्वास्थ्य विश्लेषण: उर्वरक अनुप्रयोग को अनुकूलित करें।</li>
+                  <li>मौसम पूर्वानुमान: खेती के संचालन की योजना बनाएं।</li>
+                  <li>बाजार विश्लेषण: मूल्य निर्धारण, बिक्री को अनुकूलित करें।</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>जैव प्रौद्योगिकी:</h4>
+                <ul>
+                  <li>आनुवंशिक इंजीनियरिंग: रोग प्रतिरोधी फसलें।</li>
+                  <li>जीन संपादन: फसल की पैदावार में सुधार करें।</li>
+                  <li>सटीक प्रजनन: फसल सुधार में तेजी लाएं।</li>
+                  <li>बायोस्टिमुलेंट: पौधे की वृद्धि को बढ़ाएं।</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>लाभ:</h4>
+                <ul>
+                  <li>बढ़ी हुई दक्षता</li>
+                  <li>बेहतर फसल पैदावार</li>
+                  <li>बढ़ी हुई स्थिरता</li>
+                  <li>कम श्रम लागत</li>
+                  <li>डेटा-संचालित निर्णय लेना</li>
+                </ul>
+              </div>
+          
+              <div class="section">
+                <h4>हाई-टेक खेती कंपनियों के उदाहरण:</h4>
+                <ul>
+                  <li>जॉन डीरे (सटीक कृषि)</li>
+                  <li>ग्रैन्युलर (खेत प्रबंधन सॉफ्टवेयर)</li>
+                  <li>फार्मवाइज (स्वायत्त खेती)</li>
+                  <li>इंडिगो एजी (सटीक कृषि मंच)</li>
+                  <li>बोवेरी फार्मिंग (वर्टिकल खेती)</li>
+                </ul>
+              </div>
+            </div>
+          
+          </section>
+          <div class="button-class">
+          <a href="Products Buying.html" class="buy-products">Buy Products</a></div>
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy;2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+
+
+    <title>FarmTech Solutions-Services</title>
+    <style>
+        body{
+            background-color: #F1F8E9;
+
+        }
+       
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:   black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+.third li{
+    
+    box-sizing: border-box;
+    
+  
+}
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 35px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+    
+   
+    
+   
+}
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    position: relative;
+    top:60px;
+    left: 90px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.total-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.services-container{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.services{
+   
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   gap:60px;
+   margin-top: 50px;
+   background-color: #fff;
+   margin: 25px 50px;
+   border-radius: 20px;
+}
+.services h2{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+        color: rgb(0, 1, 1);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 72px;
+      
+}
+.services p{
+    width: 500px;
+    font-size: 16px;
+    font-family: FedraSerifAStdBook;
+    font-weight: 500;
+    line-height: 20px;
+    color:
+rgb(103, 96, 85);
+    font-style: normal;
+    word-spacing: 1px;
+    padding: 0px 15px ;
+    text-align: justify;
+  
+}
+.services a{
+    padding: 10px 10px;
+    background-color: #28a745;
+    border-radius:80%;
+   width: 30px;
+   height: 20px;
+   
+
+}
+
+.services img{
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+ margin-left: 40px;
+
+    
+}
+
+.services-2 button{
+   
+}
+.services-3 button{
+   
+}
+.services-4 button{
+    
+}
+.services-5 button{
+ 
+}
+.services>a img{
+    width: 30px;
+    height: 20px;
+}
+.name h1 {
+    
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.name h1 {
+   
+    background-image: url('https://t4.ftcdn.net/jpg/06/78/70/07/360_F_678700717_TtD0NWhl0p1wUEDCbKD8bttsbsRbaeb6.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+.container{
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    gap: 20px;
+    margin-left: 40px;
+    
+   
+}
+.card{
+  width:300px;
+  border:none;
+  padding:15px;
+  margin-top:50px;
+  height:auto;
+  border-radius:10px;
+  text-align:center;
+  border: 1px solid black;
+  transition: transform 0.3s ease-in;
+  gap: -10px;
+
+ 
+}
+.card:hover{
+    background-color: #ffffff;
+    box-shadow:0.5px 0.5px 0.5px 1px black;
+    transform: scale(1.02);
+}
+.card-header>img{
+   height:230px;
+   width:290px;
+}
+.card-body img{
+    height: 70px;
+    width: 90px;
+    position: relative;
+    border: 2px solid transparent;
+    top:-35px;
+    border-radius: 100%;
+    bottom: -35px;
+    border: 4px solid #a1887f; 
+    background-color: white;
+}
+.card-body h1{
+    margin-top: -30px;
+}
+
+.card-footer{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: -30px;
+    
+}
+.card-footer>.btn{
+    width:80px;
+    height:30px;
+    margin-left:100px;
+    background-color: #28a745;
+
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <a href="Home.html"><img src="logo farmers.png" alt=""></a>
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+            </li>
+        <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+        <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+        <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+        <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+        <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+            Join Us</a></li>
+        <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+        </ul>
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/12314915/pexels-photo-12314915.jpeg?auto=compress&cs=tinysrgb&w=600"width="200" height="200">
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/128/8044/8044418.png" alt="" class="rounded-circle">
+                <h1 class="class-title">Organic Framing</h1>
+            </div>
+            <div class="card-footer">
+                <p>Organic farming is a method of agriculture that focuses on producing crops and livestock without the use of synthetic chemicals, such as pesticides, herbicides, and fertilizers, or genetically modified organisms (GMOs).</p>
+                <a href="Organic farming.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>
+                    Check</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://plus.unsplash.com/premium_photo-1661962982373-8cfad08924dd?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"width="200" height="200">
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/128/5863/5863526.png" alt="" class="rounded-circle">
+                <h1 class="class-title">Chemical Farming</h1>
+            </div>
+            <div class="card-footer">
+                <p>Chemical farming uses synthetic chemicals like fertilizers, pesticides, and herbicides to boost crop growth and control pests. It's short-term, but can lead to soil degradation, water contamination,and long-term pest resistance.</p>
+                <a href="Chemical farmin.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>Check</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.shutterstock.com/image-photo/agriculture-artificial-intelligence-technology-smart-600nw-1992722921.jpg"width="200" height="200" >
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.freepik.com/256/4462/4462937.png?ga=GA1.1.1928647342.1726027950&semt=ais_hybrid" alt="" class="rounded-circle">
+                <h1 class="class-title">Crop Monitoring</h1>
+            </div>
+            <div class="card-footer">
+                <p>Crop monitoring, autonomous farming, and vertical farming utilize advanced technologies to monitor crop health, automate tasks, and reduce labor costs, enhancing efficiency and productivity.</p>
+                <a href="crop monitoring.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>Check</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://invest.kerala.gov.in/media/fiupxbfp/agr-b.jpg"width="200" height="200">
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.freepik.com/256/11065/11065534.png?ga=GA1.1.1928647342.1726027950&semt=ais_hybrid" alt="" class="rounded-circle">
+                <h1 class="class-title">HiTech Farming</h1>
+            </div>
+            <div class="card-footer">
+                <p>High-tech farming, also known as precision agriculture, uses advanced technologies to optimize crop yields, reduce waste, and promote sustainability, including precision irrigation systems using sensors, drones, and satellite imaging.</p>
+                <a href="Hi Tech Farming.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>Check</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://sarep.ucdavis.edu/sites/g/files/dgvnsk9171/files/styles/sf_large_width/public/media/images/AdobeStock_147024160.jpeg?itok=W0K4tNi1"width="200" height="200">
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.freepik.com/256/4689/4689753.png?ga=GA1.1.1928647342.1726027950&semt=ais_hybrid" alt="" class="rounded-circle">
+                <h1 class="class-title">Product Selling</h1>
+            </div>
+            <div class="card-footer">
+                <p>Our platform enables farmers to sell fresh organic products, efficiently manage orders, and beautifully showcase their products. It allows for secure payment processing and responsive customer support for a seamless farm-to-consumer experience</p>
+                <a href="Products Selling.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>Check</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://img.freepik.com/free-photo/woman-buying-fresh-organic-vegetables-street-market-smiling-woman-with-vegetable-market-store-concept-healthy-food-shopping_1391-621.jpg?t=st=1726309629~exp=1726313229~hmac=e919cd428549a510bd4848533fcb6cc24efe455fbd725c0e594691f8047f7deb&w=996"width="200" height="200">
+
+            </div>
+            <div class="card-body">
+                <img src="https://cdn-icons-png.freepik.com/256/2331/2331970.png?ga=GA1.1.1928647342.1726027950&semt=ais_hybrid" alt="" class="rounded-circle">
+                <h1 class="class-title">Product Buying</h1>
+            </div>
+            <div class="card-footer">
+                <p>Online farming and the sale of farming products through farm tech solutions have revolutionized the agricultural sector, providing farmers with innovative ways to enhance productivity, reduce costs, and reach wider markets.</p>
+                <a href="Products Buying.html" class="btn"><i class="fas fa-hand-pointer" style="padding-right: 5px;"></i>Check</a>
+            </div>
+        </div>
+    </div>
+
+   
+<div class="clear"></div>
+<div class="footer-main">
+
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+
+
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy;2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</div>
+</body>
+</html>

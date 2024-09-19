@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <title>FarmTech Solutions-About Us</title>
+    <style>
+body{
+    background-color: #F1F8E9;
+}
+
+
+.secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: #388E3C;
+    height: 80px;
+    
+    padding: 5px 25px;
+    color: #ffffff;
+    justify-content: space-evenly;
+   z-index: 100;
+   position: sticky;
+   top: 0px;
+   }
+   .secondnav li{
+    list-style-type: none;
+    
+   
+   }
+   .secondnav div{
+    margin-left: -10px;
+   }.first-nav-second{
+    margin-left: 50px;
+   }
+   .first-nav-second img{
+    max-width: 120px; 
+    height: auto;
+    margin-left: -80px;
+   
+    margin-top: -120px;
+
+   }
+   .first-nav-second h1{
+    margin-left: 40px;
+   }
+  
+   .center-second-nav{
+   
+       display: flex;
+       justify-content: center;
+      
+       border-left: none;
+       border-right: 0.1px solid #ffffff;
+   
+       
+   }
+   .center-second-nav li{
+   list-style-type: none;
+   margin-left: 10px;
+   border-right: 0.1px solid #ffffff;
+      
+   }
+   .center-second-nav li>a{
+   
+       text-decoration: none;
+       font-family: 'FedraSansStd-medium', sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       font-style: normal;
+       line-height: 30px;
+       color: #ffffff;
+       padding: 10px;
+       
+   }
+   .center-second-nav li>a:hover{
+   color:    black ;
+   
+   }
+   .third{
+    display: flex;
+   margin-left: -80px;
+   margin-top: 30px;
+   
+}
+.third li>a{
+    font-family: 'FedraSansStd-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+ text-align: center;
+    text-decoration: none;
+    text-indent: 10px;
+background-color: black;
+padding: 7px;
+border-radius: 20px;
+
+
+}
+
+
+.fa-search{
+
+    font-size: 18px;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+
+}
+.dropdown-list{
+    display: none;
+    width: 124px;
+    height: 90px;
+    background-color: #ffffff;
+   
+    margin-left: -60px;
+    margin-top: 10px;
+   
+    padding: 25px 35px;
+   
+
+}
+.dropdown-main:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    background-color:#388E3C;
+   
+}
+
+
+.dropdown-item{
+    margin-top: 5px;
+    
+   
+    
+   
+}
+
+.first-ul-item a{
+    font-size: 26px;
+    font-weight: 500;
+}
+.first-ul-item a{
+    font-family: 'FedraSerifAStdBook', Georgia, serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    color: #F5F5F5;
+    text-decoration: none;
+  }   
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+  }
+  .image-first img{
+    width: 400px;
+    height: 200px;
+    border-radius: 120%;
+    border: none;
+    
+  }
+  footer {
+    background-color: #333; 
+    color: #ffffff;
+ 
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    
+    font-family: FedraSansStd-A-medium;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ flex-direction: row;
+ 
+}
+
+.logo-div-footer img {
+    max-width: 120px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.footer-part h1 {
+    font-size:20px ;
+    font-family: FedraSansStd-A-medium;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.footer-part{
+    position: relative;
+    top:60px;
+    left: 90px;
+
+}
+
+.icons-div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.icons a{
+    margin-left: 25px;
+}
+.icons-2 {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3B5999;
+}
+
+.footer-hr hr {
+    border: 1px solid  #ffffff;
+    margin: 20px 0;
+}
+
+.footer-hr p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.footer-hr>p a:hover {
+    
+   cursor: pointer;
+   
+    
+}
+
+.footer-hr>p a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color:
+    #ffffff;
+    font-family: FedraSansStd-medium;
+    text-decoration: none;
+    margin-right: 10px;
+    border-spacing: 5px;
+    padding: 3px;
+    
+}
+.team-details 
+{
+    position: relative;
+    top:60px;
+   left: 60px;
+    
+    
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.team-details p{
+    font-family:FedraSansStd-medium;
+    font-size: 12px;
+    border-left:1px solid #8A8173;
+    padding: 20px;
+    text-transform:capitalize;
+    
+}
+.location-details p{
+    font-family:FedraSansStd-medium;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: 40px;
+    font-size: 14px;
+}
+.total-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+header {
+   
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.team-div h1{
+    font-size: 16px;
+    color: white;
+}
+
+
+
+.container {
+    width: 45%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 00px 0;
+}
+.container-core{
+    width: 45%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+h2 {
+    color: black;
+    margin-top: 10px;
+    font-size: 1.8em;
+    margin-left: 45px;
+    
+}
+.team-details-full h2{
+    color: black;
+    margin-top: 40px;
+    font-size: 1.8em;
+    margin-left: 130px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+
+.mission-vision {
+   
+    padding: 10px 0;
+}
+
+.core-values {
+    background-color: #f1f8e9;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.core-values ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.core-values li {
+    padding: 10px 0;
+}
+.container-images img{
+    width: 80%;
+    height: 80%;
+    mix-blend-mode: multiply;
+}
+.team-container {
+   
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    
+}
+
+.team-div {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 10px 10px;
+    cursor: pointer;  
+}
+.name h1 {
+ 
+  
+    color: #ffffff;
+}
+.bi-youtube:hover{
+    color: #FF0000;
+}
+.bi-instagram:hover{
+    color: #FF0C54;
+}
+.cta:hover{
+    background-image: linear-gradient(to bottom left,red,green);
+
+}
+.team-div:hover{
+    transform: scale(1.5);
+    transform:skew(-2deg);
+    transition: transform 0.4s ease-in;
+}
+
+.first {
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background-color: black;
+    padding: 20px;
+    margin-top: -1px;
+    width: 170px;
+    height: 50px;
+}
+
+.team-div h2 {
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight:16px;
+    line-height: 23px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.team-div h3 {
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(103, 96, 85);
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.team-div button>a{
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'FedraSansStd-A-Medium', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    line-height: 31px;
+}
+
+
+.team-div button {
+    margin-left: 20px;
+    margin-top: 30px;
+    
+    background-color: #28a745;
+ color: white;
+    padding: 2px 7px;
+   
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+button:hover{
+   background-color: #28a745;;
+}
+
+.first-se {
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background-color: black;
+    padding: 20px;
+    margin-top: -1px;
+    width: 170px;
+    height: 50px;
+}
+
+.second-se {
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background-color: black;
+    padding: 20px;
+    margin-top: -1px;
+    width: 170px;
+    height: 50px;
+}
+
+.vasavi-bg {
+    background-color: black;
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    
+    padding: 20px;
+    margin-top: -1px;
+    width: 170px;
+    height: 50px;
+}
+
+.pavani-bg {
+    background-color: black;
+    font-family: 'FedraSerifAStdBook', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+
+    padding: 20px;
+    margin-top: -1px;
+    width: 170px;
+    height: 50px;
+}
+.mission-vision h1{
+    margin-left: 400px;
+    color:#006064;
+}
+
+.quicks-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  
+   
+}
+.quicks-links{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.first-conatiner-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .first-pic img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .first-pic img:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #388E3C;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .mission-vision {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+           
+            margin: 20px 0;
+        }
+
+        .mission-vision-content {
+            text-align: center;
+            flex: 1;
+        }
+
+        .mission-vision h1 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-left: -50px;
+        }
+
+        .mission-vision h2 {
+            font-size: 1.6rem;
+            color: #388E3C;
+            margin-bottom: 10px;
+        }
+
+        .mission-vision p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .first-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .mission-vision {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .mission-vision h1 {
+                font-size: 1.5rem;
+            }
+
+            .mission-vision h2 {
+                font-size: 1.4rem;
+            }
+
+            .mission-vision p {
+                font-size: 1rem;
+            }
+
+            .first-pic img {
+                max-width: 150px;
+            }
+        }
+        .culture{
+            background-color: #ffffff;
+            margin: 40px;
+            padding: 20px;
+            width: 90%;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="secondnav">
+        <div class="first-nav-second">
+            
+                <h1>FarmTech Solutions</h1>
+                <a href="Home.html"><img src="logo farmers.png" alt=""></a>
+        </div>
+        
+        <ul class="center-second-nav">
+            <li class="second-nav-item"><a href="Home.html"><i class="fas fa-home" style="padding: 10px;"></i>Home</a>
+                </li>
+            <li class="second-nav-item"><a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a></li>
+            <li class="second-nav-item"><a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a></li>
+            <li class="second-nav-item"><a href="Gallery-Farmers.html"><i class="bi bi-images"style="padding: 10px;"></i>Gallery</a></li>
+            <li class="second-nav-item"><a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a></li>
+            <li class="second-nav-item"><a href="JoinUs.html"><i class="bi bi-people"></i>
+                Join Us</a></li>
+            <li class="second-nav-item"><a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a></li>
+           
+           
+            
+        </ul>
+     
+        <div class="third">
+           
+               
+          <a href=""><i class="fa-solid fa-file-search"></i></a>
+           <li class="dropdown-main"><img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="" height="30px" width="">
+            <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="Sign in.html">Sign in</a></li>
+                <li class="dropdown-item"><a href="#">Settings</a></li>
+            </ul></li>
+           
+        </div>
+    </nav>
+
+   
+        <header>
+            <h1>About Farm Tech Solutions</h1>
+        </header>
+
+
+    <section class="mission-vision">
+        <div class="first-pic">
+            <img src="DALL·E 2024-09-08 00.27.20 - A detailed illustration of golden sheaves of wheat, arranged in a rustic and artistic style, suitable for bakery packaging. The wheat sheaves should b.webp" alt="FarmTech Solutions Image">
+        </div>
+        
+        <div class="mission-vision-content">
+            <h1><i class="bi bi-leaf"></i> " Teamwork drives agricultural innovation, feeding a hungry world " <i class="bi bi-leaf"></i></h1>
+            <h2>Our Mission</h2>
+            <p>To empower farmers with cutting-edge technology and data-driven solutions that increase productivity and sustainability.</p>
+
+            <h2>Our Vision</h2>
+            <p>To revolutionize the agricultural industry by providing innovative tools and resources to farmers worldwide.</p>
+        </div>
+
+        <div class="first-pic">
+            <img src="DALL·E 2024-09-08 00.27.20 - A detailed illustration of golden sheaves of wheat, arranged in a rustic and artistic style, suitable for bakery packaging. The wheat sheaves should b.webp" alt="FarmTech Solutions Image">
+        </div>
+    </section>
+<section class="culture">
+    <h2>Company Culture</h2>
+    <p>At FarmTech Solutions, we believe in the power of teamwork and innovation. Our culture is built on collaboration, with each team member playing a vital role in our mission to transform agriculture. We encourage creativity and continuous learning, fostering an environment where ideas flow freely and everyone has a voice.</p>
+
+       <p> Our commitment to farmers drives everything we do. We understand that the challenges in agriculture are constantly evolving, and that’s why we invest in research and development to stay ahead of the curve. We strive to create solutions that not only solve today's problems but anticipate the needs of tomorrow’s farmers.</p>
+
+
+
+</section>
+
+
+
+
+
+<section class="core-values">
+    <div class="container-core">
+        <h3>Our Core Values</h3>
+        <ul>
+            <li>Innovation</li>
+            <li>Integrity</li>
+            <li>Sustainability</li>
+            <li>Collaboration</li>
+        </ul>
+    </div>
+    <div class="container-images">
+        <img src="https://drscottcolonna.com/wp-content/uploads/2022/07/Why-Determining-Core-Values-Will-Help-Grow-Your-Business.jpg" alt="">
+    </div>
+</section>
+<section class="section-core-values">
+
+</section>
+<div class="team-details-full"></div>
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+        <div class="team-div">
+            
+            <h1 class="first">Routhu Surendra kumar</h1>
+            <h2>Grow Tech</h2>
+            <h3>Dr. Reddy's Foundation</h3>
+            <button><a href="mailto:surendrakumarrouthu@gmail.com">Contact now</a></button>
+        </div>
+        <div class="team-div">
+      
+            <h1 class="first-se">Sangeetha</h1>
+            <h2>Grow Tech</h2>
+            <h3>Dr. Reddy's Foundation</h3>
+            <button><a href="mailto:">Contact now</a></button>
+        </div>
+        <div class="team-div">
+         
+            <h1 class="second-se">Harshitha</h1>
+            <h2>Grow Tech</h2>
+            <h3>Dr. Reddy's Foundation</h3>
+            <button><a href="mailto:">Contact now</a></button>
+        </div>
+    
+        <div class="team-div">
+            
+            <h1 class="vasavi-bg">Vasavi</h1>
+            <h2>Grow Tech</h2>
+            <h3>Dr. Reddy's Foundation</h3>
+            <button><a href="mailto:">Contact now</a></button>
+        </div>
+        <div class="team-div">
+           
+            <h1 class="pavani-bg">Pavani</h1>
+            <h2>Grow Tech</h2>
+            <h3>Dr. Reddy's Foundation</h3>
+            <button><a href="mailto:">Contact now</a></button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        
+            <div class="logo-div-footer">
+            
+            <img src="logo farmers.png" alt="">
+            </div>
+    
+    
+        <div class="footer-part">
+
+            <h1>Find Us On Social Media</h1>
+            <div class="icons-div icons-vi">
+            <div class="icons">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="icons-2 icons-vi">
+            <a href="https://www.youtube.com" class="social-icon" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="location-details">
+    <p><i class="bi bi-geo-alt"></i>
+        Syndicate Bank Colony,<br>
+        Plot No 68, Road No 4,<br>
+        Miyapur, Hyderabad,<br>
+        Telangana 500049,<br>
+        India</p>
+</div>
+<div class="quicks-links">
+    <a href="About-Us.html"><i class="fas fa-user" style="padding: 10px;"></i>About Us</a>
+       <a href="services.html"><i class="bi bi-tools" style="padding: 10px;" ></i>Services</a>
+     <a href="ConatctUs.html"><i class="fas fa-envelope-open" style="padding: 10px;"></i>Contact</a>
+        <a href="JoinUs.html"><i class="bi bi-handshake" ></i>Join Us</a></li>
+       <a href="Clients.html"><i class="fas fa-certificate" style="padding: 10px;"></i>Clients</a>
+
+</div>
+<div class="team-details">
+    <p>
+        Website powered by  <br>
+        Designed By </p>
+</div>
+
+    </div>
+    
+    <div class="footer-hr">
+        <hr>
+        <p>&copy; 2024 DRF Foundation. All Rights Reserved. <a href="">Terms & Conditions</a><a href="">Privacy Policy</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

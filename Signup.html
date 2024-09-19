@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmTech Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F1F8E9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        input::placeholder{
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            color: 
+            rgb(84, 83, 108);
+            font-style: normal;
+
+        }
+
+        .container {
+            text-align: center;
+            background-color: transparent;
+        }
+
+        .Signin-box {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: rgb(84, 83, 108);
+            font-family: 'PT Sans', sans-serif;
+            line-height: 29px;
+            letter-spacing: 2px;
+        }
+
+        .tab {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .tab-button-active {
+            text-decoration: none;
+            color: black;
+            background-color:#e0e0e0;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 10px;
+            border: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            width: 50%;
+        }
+        .tab-button-inactive {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #1a73e8;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 10px;
+            border: 20px;
+            border-radius: 10px;
+            width: 50%;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+           
+        }
+
+        .google {
+            background-color: #4C8BF5;
+            border: 1px solid #ddd;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 27px;
+            font-style: normal;
+            height: 40px;
+        }
+     
+        .facebook {
+            background-color: #3b5998;
+            color: white;
+            height: 40px;
+        }
+        
+
+        .or {
+            color: #777;
+            margin: 15px 0;
+        }
+
+        .input-group {
+            margin: 15px 0;
+            position: relative;
+        }
+
+        label {
+            font-size: 12px;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+
+        .forgot-password {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            font-size: 12px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #e0a800;
+        }
+        .submit-btn a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        .social-login img {
+            color: #ffffff;
+            border-radius: 80%;
+            
+            margin-left: 0px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            padding: 6px;
+            width:30px;
+            height: 30px;
+        }
+
+        .social-login span {
+            flex-grow: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .google img {
+            margin-left: 0px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            padding: 6px;
+            width:30px;
+            height: 30px;
+        }
+        .buttons-social{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .whole{
+            display: flex;
+            flex-direction: row;
+        }
+        .ask span{
+            font-size: 17px;
+            color: 
+            rgb(84, 83, 108);
+            font-weight: 500;
+            line-height:20px ;
+            font-family: 'PT Sans', sans-serif;
+
+
+        }
+        .ask a{
+            text-decoration: none;
+            color: 
+            rgb(255, 206, 73);
+            font-size: 17px;
+            font-weight: 500;
+            line-height:20px ;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .image-div img{
+            width: 550px;
+            height: 550px;
+        }
+        .input-group-checkbox{
+            display: flex;
+            flex-direction: row;
+        }
+        .input-group-checkbox input{
+  
+       width: 20px;
+       height: 20px;
+       border-radius: 5px;
+        }
+        .input-group-checkbox span{
+            
+            color:    rgb(213, 213, 213);
+            margin-left: 5px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height:23px ;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .input-group-checkbox span>a{
+            text-decoration: none;
+            color: rgb(118, 106, 206);
+            font-size: 15px;
+            font-weight: 500;
+            line-height:23px ;
+            font-family: 'PT Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="image-div">
+            <img src="https://satyukt.com/web/assets/img/farmer_1.png" alt="">
+        </div>
+
+    <div class="container">
+        <div class="Signin-box">
+            <h1>Sign Up With FarmTech</h1>
+            <div class="buttons-social">
+
+            <button class="social-login google">
+                <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="">
+                <span>Google</span>
+            </button>
+            
+            <button class="social-login facebook">
+                <img src="https://cdn-icons-png.flaticon.com/128/4922/4922978.png" alt="">
+                <span>Facebook</span>
+            </button>
+        </div>
+            <p class="or">OR</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" id="first name" placeholder="First Name">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="Last Name" placeholder="Last Name">
+                </div>
+                <div class="input-group">
+                    <input type="number" id="Mobile Number" placeholder="Mobile Number">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Addresss">
+                </div>
+
+                <div class="input-group">
+                    
+                    <input type="password" id="password" placeholder="Password">
+                    
+                </div>
+                <div class="input-group-checkbox">
+                    
+                    <input type="checkbox" id="checkbox">
+                    <span>I Agree to All <a href="#">terms of service and conditions</a></span>
+                    
+                </div>
+                <button type="submit" class="submit-btn"><a href="Home.html">Sign Up</a></button>
+            </form>
+        </div>
+        <br>
+        <div class="ask">
+            <span>Already have account <a href="Sign in.html">Sign In</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
